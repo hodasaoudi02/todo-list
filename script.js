@@ -6,7 +6,7 @@ function addTask() {
         const li = document.createElement("li");
         li.textContent = taskInput.value;
 
-        // Legg til "Slett"-knapp
+       
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "Slett";
         deleteBtn.onclick = function () {
@@ -15,6 +15,6 @@ function addTask() {
 
         li.appendChild(deleteBtn);
         taskList.appendChild(li);
-        taskInput.value = ""; // Tøm input-feltet
+        taskInput.value = ""; 
     }
 }
